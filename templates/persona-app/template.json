@@ -1,0 +1,13 @@
+{
+  "id": "persona-app",
+  "version": "v1",
+  "displayName": "Oomi Persona App",
+  "appKind": "oomi-persona-app",
+  "defaultPort": 4789,
+  "healthPath": "/webspatial/avp/oomi.health.json",
+  "startCommand": "npm run dev:avp",
+  "editableZones": [
+    "src/persona",
+    "persona"
+  ]
+}

@@ -1,0 +1,5 @@
+# The package.json "files" field is the publish allowlist for oomi-ai.
+# Keep this file present so npm does not fall back to the repo .gitignore,
+# which would strip the vendored WebSpatial dist/ payload from persona-app.
+!templates/persona-app/vendor/webspatial/core-sdk/dist/**
+!templates/persona-app/vendor/webspatial/react-sdk/dist/**

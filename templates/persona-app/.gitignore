@@ -1,0 +1,8 @@
+dist
+!vendor/webspatial/core-sdk/dist
+!vendor/webspatial/core-sdk/dist/**
+!vendor/webspatial/react-sdk/dist
+!vendor/webspatial/react-sdk/dist/**
+node_modules
+.DS_Store
+.env.local

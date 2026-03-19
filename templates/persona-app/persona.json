@@ -1,0 +1,14 @@
+{
+  "id": "__OOMI_PERSONA_SLUG__",
+  "name": "__OOMI_PERSONA_NAME__",
+  "summary": "__OOMI_PERSONA_DESCRIPTION__",
+  "status": "inactive",
+  "type": "persona",
+  "templateType": "persona-app",
+  "promptTemplateVersion": "__OOMI_TEMPLATE_VERSION__",
+  "capabilities": [],
+  "dataSources": [],
+  "tags": [
+    "managed"
+  ]
+}

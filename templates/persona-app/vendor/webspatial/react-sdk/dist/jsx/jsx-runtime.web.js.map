@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/jsx/jsx-runtime.web.ts"],"sourcesContent":["export { Fragment } from 'react/jsx-runtime'\r\nexport { jsx, jsxs } from 'react/jsx-runtime'\r\n"],"mappings":";;;;;;;;;;AAAA,SAAS,gBAAgB;AACzB,SAAS,KAAK,YAAY;","names":[]}

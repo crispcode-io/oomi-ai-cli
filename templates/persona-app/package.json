@@ -1,0 +1,44 @@
+{
+  "name": "oomi-persona-__OOMI_PERSONA_SLUG__",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:clean": "npm install",
+    "dev": "vite --host 0.0.0.0 --port 4789 --strictPort",
+    "dev:avp": "cross-env XR_ENV=avp vite --host 0.0.0.0 --port 4789 --strictPort",
+    "build": "vite build && cross-env XR_ENV=avp vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4789 --strictPort",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@webspatial/core-sdk": "file:./vendor/webspatial/core-sdk",
+    "@webspatial/react-sdk": "file:./vendor/webspatial/react-sdk",
+    "@zumer/snapdom": "^1.9.14",
+    "html2canvas": "^1.4.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@webspatial/builder": "^1.2.1",
+    "@webspatial/platform-visionos": "^1.2.1",
+    "@webspatial/vite-plugin": "^0.1.7",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "packageManager": "pnpm@10.6.4"
+}

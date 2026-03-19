@@ -1,0 +1,53 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f1b16;
+  background:
+    radial-gradient(circle at top left, rgba(222, 207, 180, 0.5), transparent 34%),
+    linear-gradient(180deg, #faf7f1 0%, #efe7db 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.7), transparent 28%),
+    radial-gradient(circle at top right, rgba(228, 216, 196, 0.62), transparent 26%),
+    linear-gradient(180deg, #faf7f1 0%, #eee5d8 100%);
+}
+
+button,
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html.is-spatial,
+html.is-spatial body {
+  background: transparent;
+}
+
+html.is-spatial #root {
+  min-height: 100vh;
+}

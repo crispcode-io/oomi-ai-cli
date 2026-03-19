@@ -1,0 +1,94 @@
+{
+  "name": "@webspatial/react-sdk",
+  "version": "1.2.1",
+  "description": "React components for WebSpatial",
+  "main": "./dist/default/index.js",
+  "type": "module",
+  "types": "./dist/default/index.d.ts",
+  "exports": {
+    ".": "./dist/default/index.js",
+    "./jsx-runtime": {
+      "react-server": "./dist/jsx/jsx-runtime.web.js",
+      "default": "./dist/jsx/jsx-runtime.js"
+    },
+    "./jsx-dev-runtime": {
+      "react-server": "./dist/jsx/jsx-dev-runtime.web.js",
+      "default": "./dist/jsx/jsx-dev-runtime.js"
+    },
+    "./default": "./dist/default/index.js",
+    "./default/jsx-dev-runtime": {
+      "react-server": "./dist/jsx/jsx-dev-runtime.web.js",
+      "default": "./dist/jsx/jsx-dev-runtime.js"
+    },
+    "./default/jsx-runtime": {
+      "react-server": "./dist/jsx/jsx-runtime.web.js",
+      "default": "./dist/jsx/jsx-runtime.js"
+    },
+    "./web": "./dist/web/index.js",
+    "./web/jsx-dev-runtime": "./dist/jsx/jsx-dev-runtime.web.js",
+    "./web/jsx-runtime": "./dist/jsx/jsx-runtime.web.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "tsc -p ./tsconfig.json && vitest run",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "start": "npm run dev",
+    "format": "npx prettier --write 'src/**/*.ts' 'src/**/*.tsx' || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webspatial/webspatial-sdk.git",
+    "directory": "packages/react"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webspatial/webspatial-sdk/issues"
+  },
+  "homepage": "https://github.com/webspatial/webspatial-sdk#readme",
+  "peerDependencies": {
+    "@webspatial/core-sdk": "^1.1.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "html2canvas": "^1.4.1"
+  },
+  "peerDependenciesMeta": {
+    "@webspatial/core-sdk": {
+      "optional": false
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "html2canvas": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/unist": "^3.0.2",
+    "@vitest/coverage-v8": "^2.0.4",
+    "@vitejs/plugin-react": "^4.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "esbuild": "^0.23.1",
+    "esbuild-plugin-d.ts": "^1.3.1",
+    "esbuild-plugin-define": "^0.5.0",
+    "jsdom": "^24.1.1",
+    "tiny-glob": "^0.2.9",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.26.5",
+    "typedoc-plugin-markdown": "^4.2.2",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.4"
+  }
+}

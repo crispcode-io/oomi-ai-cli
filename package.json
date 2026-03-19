@@ -1,0 +1,74 @@
+{
+  "name": "oomi-ai",
+  "version": "0.2.50",
+  "description": "Managed Oomi chat, voice bridge, and XR-first persona scaffolding for OpenClaw",
+  "bin": {
+    "oomi": "bin/oomi-ai.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "openclaw": {
+    "extensions": [
+      "./openclaw.extension.js"
+    ],
+    "channel": {
+      "id": "oomi",
+      "label": "Oomi",
+      "selectionLabel": "Oomi (Managed)",
+      "docsPath": "/channels/oomi",
+      "docsLabel": "oomi",
+      "blurb": "Managed channel transport for Oomi chat.",
+      "aliases": [
+        "oomi-ai"
+      ]
+    },
+    "install": {
+      "npmSpec": "oomi-ai",
+      "defaultChoice": "npm"
+    }
+  },
+  "keywords": [
+    "oomi",
+    "openclaw",
+    "cli",
+    "plugin",
+    "voice",
+    "agent",
+    "persona",
+    "webspatial",
+    "xr",
+    "androidxr"
+  ],
+  "homepage": "https://www.oomi.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crispcode-io/oomi.git",
+    "directory": "packages/oomi-ai"
+  },
+  "bugs": {
+    "url": "https://github.com/crispcode-io/oomi/issues"
+  },
+  "scripts": {
+    "check": "node --check bin/oomi-ai.js",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.19.0"
+  },
+  "license": "MIT",
+  "files": [
+    "bin/oomi-ai.js",
+    "bin/sessionBridgeState.js",
+    "lib",
+    "openclaw.plugin.json",
+    "openclaw.extension.js",
+    "agent_instructions.md",
+    "README.md",
+    "skills/oomi",
+    "templates/persona-app",
+    "templates/persona-app/vendor/webspatial/core-sdk/dist",
+    "templates/persona-app/vendor/webspatial/react-sdk/dist"
+  ]
+}

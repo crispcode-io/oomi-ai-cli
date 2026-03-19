@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "status": "healthy",
+  "appKind": "oomi-persona-app",
+  "templateVersion": "__OOMI_TEMPLATE_VERSION__"
+}

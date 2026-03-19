@@ -1,0 +1,13 @@
+{
+  "templateVersion": "__OOMI_TEMPLATE_VERSION__",
+  "appKind": "oomi-persona-app",
+  "healthPath": "/webspatial/avp/oomi.health.json",
+  "defaultPort": 4789,
+  "supportsRuntimeRegistration": true,
+  "renderMode": "webspatial",
+  "entryDocument": "/index.html",
+  "editableZones": [
+    "src/persona",
+    "persona"
+  ]
+}

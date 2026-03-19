@@ -1,0 +1,17 @@
+{
+  "id": "oomi-ai",
+  "name": "Oomi Channel Plugin",
+  "description": "Managed Oomi channel integration for OpenClaw.",
+  "version": "0.2.50",
+  "author": "Oomi",
+  "license": "MIT",
+  "openclawVersion": ">=0.5.0",
+  "channels": [
+    "oomi"
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
